@@ -26,7 +26,7 @@ The following options are available:
 ## Advanced Usage (with options)
 
 ```html
-<p>The two standard gender symbols denoting male ♂ and female ♀ are derived from astrological symbols, denoting the classical planets Mars and Venus, respectively.</p>
+<p>The two standard gender symbols denoting Male &#9794; and Female &#9792; are derived from astrological symbols, denoting the classical planets Mars and Venus, respectively.</p>
 
 <style>
     .highlight-male { color: #909fc5; }
@@ -34,8 +34,8 @@ The following options are available:
 </style>
 <script>
 $(function() {
-    $("p").adcHighlight({ text: 'female', caseSensitive: true, cssClass: 'highlight-female' });
-    $("p").adcHighlight({ text: 'male', caseSensitive: true, cssClass: 'highlight-male' });
+    $("p").adcHighlight({ text: 'Female', caseSensitive: true, cssClass: 'highlight-female' });
+    $("p").adcHighlight({ text: 'Male', caseSensitive: true, cssClass: 'highlight-male' });
 });
 </script>
 
