@@ -1,4 +1,4 @@
-jquery-adcHighlighter
+jquery-adcHighlighter v1.0.0
 =====================
 
 Easily highlight terms on an HTML document
