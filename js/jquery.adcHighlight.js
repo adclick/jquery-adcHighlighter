@@ -75,7 +75,7 @@ var adc_highlight_last_css_class = "highlight";
             innerHighlight(this, settings.text, settings.cssClass, settings.caseSensitive);
         }) : this;
 
-    }
+    };
 
     /**
      * Removes adcHighlight
@@ -97,6 +97,6 @@ var adc_highlight_last_css_class = "highlight";
                 normalize();
             }
         }).end();
-    }
+    };
 
 }(jQuery));
