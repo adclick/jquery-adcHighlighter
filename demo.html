@@ -1,0 +1,40 @@
+<html>
+<head>
+	<title>jquery-adcHighlighter v1.0.0 demo</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="js/jquery.adcHighlight.js"></script>
+</head>
+<body>
+
+<h1>jquery-adcHighlighter v1.0.0 demo</h1>
+<a href="https://github.com/adc-tcarvalho/jquery-adcHighlighter">https://github.com/adc-tcarvalho/jquery-adcHighlighter</a>
+<h2>Basic Usage</h2>
+
+<p id="intro">The Adclick Group has over 60 professionals, working in Portugal and Brasil, who follow the values that move us forward: passion, creativity, relevance and sustainability.</p>
+
+<style>.highlight { background-color: yellow; }</style>
+<script>
+$(function() {
+    $("#intro").adcHighlight({ text: 'Adclick' });
+});
+</script>
+
+<!-- ####################################################### -->
+
+<h2>Advanced Usage (with options)</h2>
+<p>The two standard gender symbols denoting Male &#9794; and Female &#9792; are derived from astrological symbols, denoting the classical planets Mars and Venus, respectively.</p>
+
+<style>
+    .highlight-male { color: #909fc5; }
+    .highlight-female { color: #c5909a; }
+</style>
+<script>
+$(function() {
+    $("p").adcHighlight({ text: 'Female', caseSensitive: true, cssClass: 'highlight-female' });
+    $("p").adcHighlight({ text: 'Male', caseSensitive: true, cssClass: 'highlight-male' });
+});
+</script>
+
+
+</body>
+</html>
