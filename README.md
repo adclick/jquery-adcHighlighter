@@ -44,4 +44,4 @@ $(function() {
 
 ## Thanks
 
-This plugin is based by "highlight v4" by [Johann Burkard](http://johannburkard.de/blog/programming/javascript/highlight-javascript-text-higlighting-jquery-plugin.html).
+This plugin is based on "highlight v4" by [Johann Burkard](http://johannburkard.de/blog/programming/javascript/highlight-javascript-text-higlighting-jquery-plugin.html).
