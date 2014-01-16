@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Jquery-adchighlighter by adc-tcarvalho</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Jquery-adchighlighter</h1>
+        <p>Easily highlight terms on an HTML document</p>
+
+        <p class="view"><a href="https://github.com/adc-tcarvalho/jquery-adcHighlighter">View the Project on GitHub <small>adc-tcarvalho/jquery-adcHighlighter</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/adc-tcarvalho/jquery-adcHighlighter/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/adc-tcarvalho/jquery-adcHighlighter/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/adc-tcarvalho/jquery-adcHighlighter">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a name="jquery-adchighlighter-v100" class="anchor" href="#jquery-adchighlighter-v100"><span class="octicon octicon-link"></span></a>jquery-adcHighlighter v1.0.0</h1>
+
+<p>Easily highlight terms on an HTML document</p>
+
+<h2>
+<a name="basic-usage" class="anchor" href="#basic-usage"><span class="octicon octicon-link"></span></a>Basic Usage</h2>
+
+<div class="highlight highlight-html"><pre><span class="nt">&lt;p</span> <span class="na">id=</span><span class="s">"intro"</span><span class="nt">&gt;</span>The Adclick Group has over 60 professionals, working in Portugal and Brasil, who follow the values that move us forward: passion, creativity, relevance and sustainability.<span class="nt">&lt;/p&gt;</span>
+
+<span class="nt">&lt;style&gt;</span><span class="nc">.highlight</span> <span class="p">{</span> <span class="k">background-color</span><span class="o">:</span> <span class="nb">yellow</span><span class="p">;</span> <span class="p">}</span><span class="nt">&lt;/style&gt;</span>
+<span class="nt">&lt;script&gt;</span>
+<span class="nx">$</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">$</span><span class="p">(</span><span class="s2">"#intro"</span><span class="p">).</span><span class="nx">adcHighlight</span><span class="p">({</span> <span class="nx">text</span><span class="o">:</span> <span class="s1">'Adclick'</span> <span class="p">});</span>
+<span class="p">});</span>
+<span class="nt">&lt;/script&gt;</span>
+</pre></div>
+
+<h2>
+<a name="options" class="anchor" href="#options"><span class="octicon octicon-link"></span></a>Options</h2>
+
+<p>The following options are available:</p>
+
+<ul>
+<li>
+<strong>text</strong>  text pattern to highlight</li>
+<li>
+<strong>cssClass</strong>  css class to use on the span wrapper</li>
+<li>
+<strong>caseSensitive</strong> self explanatory, I hope</li>
+</ul><h2>
+<a name="advanced-usage-with-options" class="anchor" href="#advanced-usage-with-options"><span class="octicon octicon-link"></span></a>Advanced Usage (with options)</h2>
+
+<div class="highlight highlight-html"><pre><span class="nt">&lt;p&gt;</span>The two standard gender symbols denoting Male <span class="ni">&amp;#9794;</span> and Female <span class="ni">&amp;#9792;</span> are derived from astrological symbols, denoting the classical planets Mars and Venus, respectively.<span class="nt">&lt;/p&gt;</span>
+
+<span class="nt">&lt;style&gt;</span>
+    <span class="nc">.highlight-male</span> <span class="p">{</span> <span class="k">color</span><span class="o">:</span> <span class="m">#909fc5</span><span class="p">;</span> <span class="p">}</span>
+    <span class="nc">.highlight-female</span> <span class="p">{</span> <span class="k">color</span><span class="o">:</span> <span class="m">#c5909a</span><span class="p">;</span> <span class="p">}</span>
+<span class="nt">&lt;/style&gt;</span>
+<span class="nt">&lt;script&gt;</span>
+<span class="nx">$</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">$</span><span class="p">(</span><span class="s2">"p"</span><span class="p">).</span><span class="nx">adcHighlight</span><span class="p">({</span> <span class="nx">text</span><span class="o">:</span> <span class="s1">'Female'</span><span class="p">,</span> <span class="nx">caseSensitive</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span> <span class="nx">cssClass</span><span class="o">:</span> <span class="s1">'highlight-female'</span> <span class="p">});</span>
+    <span class="nx">$</span><span class="p">(</span><span class="s2">"p"</span><span class="p">).</span><span class="nx">adcHighlight</span><span class="p">({</span> <span class="nx">text</span><span class="o">:</span> <span class="s1">'Male'</span><span class="p">,</span> <span class="nx">caseSensitive</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span> <span class="nx">cssClass</span><span class="o">:</span> <span class="s1">'highlight-male'</span> <span class="p">});</span>
+<span class="p">});</span>
+<span class="nt">&lt;/script&gt;</span>
+
+</pre></div>
+
+<h2>
+<a name="thanks" class="anchor" href="#thanks"><span class="octicon octicon-link"></span></a>Thanks</h2>
+
+<p>This plugin is based by "highlight v4" by <a href="http://johannburkard.de/blog/programming/javascript/highlight-javascript-text-higlighting-jquery-plugin.html">Johann Burkard</a>.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/adc-tcarvalho">adc-tcarvalho</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
