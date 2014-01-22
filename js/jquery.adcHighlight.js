@@ -1,6 +1,6 @@
 /**
  * jQuery adcHighlight Plugin v1.0.0
- * https://github.com/adc-tcarvalho/jquery-adcHighlighter
+ * https://github.com/adclick/jquery-adcHighlighter
  *
  * Copyright 2014 Adclick Lda
  *
